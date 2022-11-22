@@ -4,3 +4,19 @@
   padding: 0px;
   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.principal
+{
+  background-color: black;
+  color: aliceblue;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.refeicao
+{
+  margin-top: 15vh;
+}
+.titulo-refeicao
+{
+
+}
