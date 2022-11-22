@@ -6,8 +6,6 @@
 }
 .principal
 {
-  background-color: black;
-  color: aliceblue;
   display: grid;
   align-items: center;
   justify-content: center;
