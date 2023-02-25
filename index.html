@@ -3,95 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Click Saúde</title>
+    <title>entrar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/click saúde logo.png" />
-    <link rel="stylesheet" href="css/style_principal.css">
-    <link rel="stylesheet" href="css/style_navbar.css">
+    <link rel="shortcut icon" href="src/img/click saúde logo.png" />
+    <link rel="stylesheet" href="src/css/style_login.css">
   </head>
   <body>
-    <nav class="nav-bar">
-      <div class="nav-bar-content">
-        <a class="logo" href=""><img src="img/click saúde logo.png" style="height: 6vh;margin-right: 5%;margin-top: 25%;"></a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#link-refeicao" class="link">Refeição</a></li>
-          <li><a href="#" class="link">Exercicios</a></li>
-          <li><a href="#" class="link">Estatísticas</a></li>
-          <li><a href="#" class="link">Premiações</a></li>
-       </ul>
-       <div class="login-e-cadastro">
-          <a class="logo" href="index_login.html">Entrar</a>
-          <a class="logo" href="index_cadastro.html">cadastre-se</a>
-       </div>
+    <div class="login-box">
+      <a href="index.html"><img src="src/img/click saúde logo.png" class="img-logo"></a>
+      <div class="login-form">
+        <h1 style="margin-bottom: 20px ;">Bem-Vindo</h1>
+        <form>
+          <span style="font-size:20px;">  login:</span><br>
+          <input type="text" class="inputs" name="login" id="nome"><br>
+          <span style="font-size:20px;">senha:</span><br>
+          <input type="password" class="inputs" name="senha" id="senha"><br>
+          <a href="src/html/index_semSenha.html" style="font-size: 10px;">esqueceu a senha</a><br>
+          <a href="https://www.linkedin.com" target="_blank"><img src="src/img/linkedin-logo.png" class="img-login"></a>
+          <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHf3fLIWaD7I5TeIVlMUDYtfFsEnNnNcVklyHniE-KzUCWkbiFNIrm51jnq3QbelmGJ0MZwiNg&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="src/img/google-logo.png" class="img-login"></a>
+          <a href="https://pt-br.facebook.com" target="_blank"><img src="src/img/facebook-logo-.png" class="img-login"></a><br>
+          <a href="src/html/index_cadastro.html"><input type="button" class="btn-cadastrar" value="cadastrar" ></a>
+          <a href="index.html"><input type="button" class="btn-enviar" value="enviar"></a>
+        </form>
       </div>
-     </nav>
-    <section>
-      <div class="principal">
-        <span id="link-refeicao"></span>
-        <div class="refeicao">
-        <h1 class="titulo-refeicao">Refeição</h1>
-        <div class="cafeManha">
-          <h2>café da Manhã</h2>
-            <div class="receitas">
-              <div class="panquecaDeAveia">
-              <img src="img/Nova pasta/panqueca-de-aveia-8-730x548.jpg" style="height: 60vh; margin: 5vh 5vh 5vh 0vh;">
-              <h3>Panqueca de aveia</h3><br>
-              <h4>ingredientes</h4><br>
-              <span>
-                1 xícara de aveia em flocos finos ou farinha de aveia <br>
-                <br>  
-                1 xícara de água <br>
-                <br>
-                2 colheres de sopa de melado <br>
-                <br>
-                1 colher de sopa de farinha de linhaça <br>
-                <br>
-                1 colher de chá de fermento químico em pó<br></span><br>
-              <h4>Modo de preparo</h4><br>
-              <span>
-                1 - Reúna todos os ingredientes;<br>
-                <br>
-                2 - Coloque todos os ingredientes no liquidificador, com exceção do fermento,<br>
-                 e bata até ficar homogêneo. Se você estiver usando farinha de aveia, pode misturar <br>
-                  todos os ingredientes com um fouet;<br>
-                  <br>
-                3 - Acrescente o fermento por último e misture delicadamente;<br>
-                <br>
-                4 - Aqueça uma frigideira antiaderente em fogo baixo. Espalhe um pouco da massa <br>
-                 e tampe para abafar e já começar a assar o outro lado;<br>
-                 <br>
-                5 - Verifique se está bem assada e vire para assar o outro lado até dourar. Tampe novamente para abafar;<br>
-                <br>
-                6 - Repita o processo até terminar a massa;<br>
-                <br>
-                7 - Sirva com o acompanhamento de sua preferência (mel, frutas, geleias, castanhas). <br>
-                <br>
-                
-              </span>
-              <h2>Bom apetite!</h2>
-              </div>
-              <div class="">
-                https://www.receiteria.com.br/receita/pao-de-abobora-com-polvilho/
-              </div>
-              <div>
-                https://www.receiteria.com.br/receita/pao-integral-de-microondas/
-              </div>
-              <div>
-                https://www.receiteria.com.br/receita/panqueca-fit-com-whey-de-cacau/
-              </div>
-              <div>
-                https://www.receiteria.com.br/receita/pao-facil-sem-gluten-e-lactose/
-              </div>
-            </div>
-        </div>
+      <div >
+        <img src="src/img/img-persona-correndo.webp" class="login-img">
       </div>
-    </section>
-    <script src="js/script.js" async defer></script>
+    </div>
   </body>
 </html>
