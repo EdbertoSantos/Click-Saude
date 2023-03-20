@@ -39,17 +39,17 @@ body
   height: 35px;
   margin: 15px;
   position: fixed;
-  top: 70px;
+  top: 15%;
 }
 .img-login
 {
-  height: 20px;
-  margin-top: 10px;
-  margin-left: 45px;
+  height: 20px  ;
+  margin: 10px 20px ;
 }
 .inputs
 {
   border: none;
+  border-color: none ;
   width: 20vw;
   color: black;
   height: 4vh;
@@ -57,6 +57,11 @@ body
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 3px;
+  text-align: center;
+}
+.inputs::placeholder
+{
+  color: black;
 }
 .btn-enviar
 {
@@ -97,4 +102,13 @@ body
   width: 100%;
   display: grid;
   justify-content: center;
+}
+.container-link
+{
+  display: flex;
+  justify-content: center;
+}
+.input-vazio
+{
+  
 }

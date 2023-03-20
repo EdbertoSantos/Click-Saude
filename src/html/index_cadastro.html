@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>cadastre-se</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../img/click saúde logo.png" />
-    <link rel="stylesheet" href="../css/style_cadastro.css">
-  </head>
-  <body>
-    <div class="login-box">
-        <a href="index.html"><img src="../img/click saúde logo.png" class="img-logo"></a>
-        <div class="FDS">
-          <h1 style="margin: 40px 0px 20px 0px;">Cadastro</h1>
-          <form class="cadastro">
-            <span style="font-size:20px;">nome:</span><br>
-            <input type="text" class="inputs" name="nome" id="nome"><br>
-            <span style="font-size:20px;">Email:</span><br>
-            <input type="email" class="inputs" name="email" id="email"><br>
-            <span style="font-size:20px;">Confirme o e-mail:</span><br>
-            <input type="email" class="inputs" name="confir_Email" id="confir_Email"><br>
-            <span style="font-size:20px;">data de nascimento:</span><br>
-            <input type="date" class="inputs" name="Idade" id="Idade"><br>
-            <span style="font-size:20px;">senha:</span><br>
-            <input type="password" class="inputs" name="senha" id="senha"><br>
-            <span style="font-size:20px;">confirme a senha:</span><br>
-            <input type="password" class="inputs" name="confirm-senha" id="confirm-senha"><br>
-            <a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin-logo.png" class="img-login"></a>
-            <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHf3fLIWaD7I5TeIVlMUDYtfFsEnNnNcVklyHniE-KzUCWkbiFNIrm51jnq3QbelmGJ0MZwiNg&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="../img/google-logo.png" class="img-login"></a>
-            <a href="https://pt-br.facebook.com" target="_blank"><img src="../img/facebook-logo-.png" class="img-login"></a><br>
-            <a href="../../index.html"><input type="button" class="btn-enviar" value="enviar"></a>
-          </form>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>cadastre-se</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/click saúde logo.png" />
+  <link rel="stylesheet" href="../css/style_cadastro.css">
+</head>
+
+<body>
+  <div class="login-box">
+    <a href="../../index.html"><img src="../img/click saúde logo.png" class="img-logo"></a>
+    <div class="FDS">
+      <h1 style="margin: 40px 0px 10px 0px;">Cadastro</h1>
+      <form class="cadastro" action="/" id="form" method="POST">
+        <span style="font-size:20px;">nome:</span><br>
+        <input type="text" class="inputs" name="nome" id="nome"><br>
+        <span style="font-size:20px;">Email:</span><br>
+        <input type="email" class="inputs" name="email" id="email"><br>
+        <span style="font-size:20px;">Confirme o e-mail:</span><br>
+        <input type="email" class="inputs" name="Confirmação_de_Email" id="Confirmação_de_Email"><br>
+        <span style="font-size:20px;">senha:</span><br>
+        <input type="password" class="inputs" name="senha" id="senha"><br>
+        <span style="font-size:20px;">confirme a senha:</span><br>
+        <input type="password" class="inputs" name="Confirmação_de_Senha" id="Confirmação_de_Senha"><br>
+        <div class="container-link">
+          <a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin-logo.png" class="img-login"></a>
+          <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHf3fLIWaD7I5TeIVlMUDYtfFsEnNnNcVklyHniE-KzUCWkbiFNIrm51jnq3QbelmGJ0MZwiNg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            target="_blank"><img src="../img/google-logo.png" class="img-login"></a>
+          <a href="https://pt-br.facebook.com" target="_blank"><img src="../img/facebook-logo-.png"
+              class="img-login"></a><br>
         </div>
+        <a href="../../index.html" id="next_page"> <button type="submit" class="btn-enviar">cadastrar</button></a>
+      </form>
     </div>
-  </body>
-  <script src="../js/script_cadastro.js"></script>
+  </div>
+</body>
+<script src="../js/script_cadastro.js"></script>
+
 </html>

@@ -1,44 +1,41 @@
-class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
+const form = document.querySelector('#form');
 
-    this.handleClick = this.handleClick.bind(this);
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const inputLogin = e.target.querySelector('#login');
+  const inputSenha = e.target.querySelector('#senha');
+
+  const login = String(inputLogin.value);
+  const senha = String(inputSenha.value);
+
+  function alertaNAN(local) {
+    document.getElementsByName(local)[0].placeholder = 'Insira um E-mail.';
+    document.getElementById(local).style.border = "solid";
+    document.getElementById(local).style.borderColor = "Red";
+    document.getElementById(local).style.borderWidth = "2px";
   }
 
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
+  function alertaOK(local) {
+    document.getElementById(local).style.border = "solid";
+    document.getElementById(local).style.borderColor = "rgba(0, 255, 110)";
+    document.getElementById(local).style.borderWidth = "2px";
   }
 
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
+  if (!login) {
+    alertaNAN('login');
+  } else {
+    alertaOK('login')
   }
 
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", this.handleClick);
+  if (!senha) {
+    alertaNAN('senha');
+  } else {
+    alertaOK('senha')
+
   }
 
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
-    }
-    return this;
+  if (senha && login) {
+    alert('obrigado por realizar login')
   }
-}
 
-const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init();
+})

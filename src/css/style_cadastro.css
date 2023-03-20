@@ -1,39 +1,38 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
-  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body
-{
-  background-image: linear-gradient(to right,  rgba(0, 115, 255, 0.993), rgb(45, 255, 255));
+
+body {
+  background-image: linear-gradient(to right, rgba(0, 115, 255, 0.993), rgb(45, 255, 255));
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.login-box
-{
+
+.login-box {
   height: 75%;
   width: 50%;
   background: #ffffff;
-  border-radius: 20px ;
+  border-radius: 20px;
   box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
   overflow: auto;
 }
-.img-logo
-{
+
+.img-logo {
   height: 35px;
   margin: 15px;
   position: absolute;
 }
-.img-login
-{
+
+.img-login {
   height: 20px;
-  margin: 10px 30px 0px 30px ;
+  margin: 10px 30px 0px 30px;
 }
-.inputs
-{
+
+.inputs {
   border: none;
   width: 20vw;
   color: black;
@@ -42,10 +41,11 @@ body
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 3px;
+  padding-left: 10px;
 }
-.btn-enviar
-{
-  border: 3px,solid;
+
+.btn-enviar {
+  border: 3px, solid;
   width: 20vw;
   color: black;
   height: 5vh;
@@ -53,13 +53,13 @@ body
   margin: 10px 0px 40px 0px;
   border-radius: 5px;
 }
-.btn-enviar:hover
-{
-  background-color:rgba(0, 255, 110, 0.993);
+
+.btn-enviar:hover {
+  background-color: rgba(0, 255, 110, 0.993);
 }
-.btn-cadastrar
-{
-  border: 3px,solid;
+
+.btn-cadastrar {
+  border: 3px, solid;
   width: 8vw;
   color: black;
   height: 5vh;
@@ -67,39 +67,48 @@ body
   margin: 10px;
   border-radius: 5px;
 }
-.btn-cadastrar:hover
-{
-  background-color:rgb(45, 237, 255);
+
+.btn-cadastrar:hover {
+  background-color: rgb(45, 237, 255);
 }
-.login-img
-{
+
+.login-img {
   height: 75vh;
   width: 100%;
-  border-radius:0px 20px 20px 0px;
+  border-radius: 0px 20px 20px 0px;
 }
-.login-form
-{
+
+.login-form {
   width: 100%;
   display: grid;
   justify-content: center;
 }
-.FDS
-{
+
+.FDS {
   display: grid;
   justify-content: center;
 }
-.login-box::-webkit-scrollbar
-{
+
+.cadastro {
+  max-height: 564px;
+}
+
+.login-box::-webkit-scrollbar {
   width: 10px
-  
 }
-.login-box::-webkit-scrollbar-track
-{
-  background: rgba(255, 255, 255, 0) ;
+
+.login-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
 }
-.login-box::-webkit-scrollbar-thumb
-{
+
+.login-box::-webkit-scrollbar-thumb {
   background-color: rgb(45, 237, 255);
-  border-radius: 50px ;
+  border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.781)
+}
+
+.container-link
+{
+  display: flex;
+  justify-content: center;
 }

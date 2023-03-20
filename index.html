@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>entrar</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="src/img/click saúde logo.png" />
-    <link rel="stylesheet" href="src/css/style_login.css">
-  </head>
-  <body>
-    <div class="login-box">
-      <a href="index.html"><img src="src/img/click saúde logo.png" class="img-logo"></a>
-      <div class="login-form">
-        <h1 style="margin-bottom: 20px ;">Bem-Vindo</h1>
-        <form>
-          <span style="font-size:20px;">  login:</span><br>
-          <input type="text" class="inputs" name="login" id="nome"><br>
-          <span style="font-size:20px;">senha:</span><br>
-          <input type="password" class="inputs" name="senha" id="senha"><br>
-          <a href="src/html/index_semSenha.html" style="font-size: 10px;">esqueceu a senha</a><br>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>entrar</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="src/img/click saúde logo.png" />
+  <link rel="stylesheet" href="src/css/style_login.css">
+</head>
+
+<body>
+  <div class="login-box">
+    <a href="index.html"><img src="src/img/click saúde logo.png" class="img-logo"></a>
+    <div class="login-form">
+      <h1 style="margin-bottom: 20px ;">Bem-Vindo</h1>
+      <form action="/" id="form" method="POST">
+        <span style="font-size:20px;"> login:</span><br>
+        <input type="text" class="inputs" name="login" id="login"><br>
+        <span style="font-size:20px;">senha:</span><br>
+        <input type="password" class="inputs" name="senha" id="senha"><br>
+        <a href="src/html/index_semSenha.html" style="font-size: 10px;">esqueceu a senha</a><br>
+        <div class="container-link">
           <a href="https://www.linkedin.com" target="_blank"><img src="src/img/linkedin-logo.png" class="img-login"></a>
-          <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHf3fLIWaD7I5TeIVlMUDYtfFsEnNnNcVklyHniE-KzUCWkbiFNIrm51jnq3QbelmGJ0MZwiNg&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="src/img/google-logo.png" class="img-login"></a>
-          <a href="https://pt-br.facebook.com" target="_blank"><img src="src/img/facebook-logo-.png" class="img-login"></a><br>
-          <a href="src/html/index_cadastro.html"><input type="button" class="btn-cadastrar" value="cadastrar" ></a>
-          <a href="index.html"><input type="button" class="btn-enviar" value="enviar"></a>
-        </form>
-      </div>
-      <div >
-        <img src="src/img/img-persona-correndo.webp" class="login-img">
-      </div>
+          <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHf3fLIWaD7I5TeIVlMUDYtfFsEnNnNcVklyHniE-KzUCWkbiFNIrm51jnq3QbelmGJ0MZwiNg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            target="_blank"><img src="src/img/google-logo.png" class="img-login"></a>
+          <a href="https://pt-br.facebook.com" target="_blank"><img src="src/img/facebook-logo-.png"
+              class="img-login"></a><br>
+        </div>
+        <a href="src/html/index_cadastro.html"><input type="button" class="btn-cadastrar" value="cadastrar"></a>
+        <a href="index.html"><button type="submit" class="btn-enviar">Entrar</button></a>
+      </form>
     </div>
-  </body>
+    <div>
+      <img src="src/img/img-persona-correndo.webp" class="login-img">
+    </div>
+  </div>
+  <script src="src/js/script.js"></script>
+</body>
+
 </html>
