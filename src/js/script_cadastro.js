@@ -1,6 +1,4 @@
-/*
-<a href="../../index.html" id="enviar">
-*/
+//<a href="../../index.html" id="enviar">
 
 const form = document.querySelector('#form');
 
@@ -19,25 +17,16 @@ form.addEventListener('submit', function (e) {
     const senha = String(inputSenha.value);
     const Confirmação_de_Senha = String(inputOksenha.value);
 
-    validacao(nome,'nome')
-    validacao(email,'email')
-    validacao(senha,'senha')
+    validacao(nome, 'nome')
+    validacao(email, 'email')
+    validacao(senha, 'senha')
 
-    if (!Confirmação_de_Email) {
-        alertaNAN('Confirmação_de_Email');
-    } else {
-        senhasIguais(email, Confirmação_de_Email, 'Confirmação_de_Email');
-    }
-
-    if (!Confirmação_de_Senha) {
-        alertaNAN('Confirmação_de_Senha');
-    } else {
-        senhasIguais(senha, Confirmação_de_Senha, 'Confirmação_de_Senha');
-    }
+    const validacaoEmail = Confirmação_de_Email == false ? alertaNAN('Confirmação_de_Email') : senhasIguais(email, Confirmação_de_Email, 'Confirmação_de_Email');
+    const validacaoSenha = Confirmação_de_Senha == false ? alertaNAN('Confirmação_de_Senha') : senhasIguais(senha, Confirmação_de_Senha, 'Confirmação_de_Senha');
 
 });
 
-function validacao(input,localizacao) {
+function validacao(input, localizacao) {
     if (!input) {
         alertaNAN(localizacao);
     } else {
@@ -50,7 +39,7 @@ function senhasIguais(local1, local2, local) {
         alertaOK(local)
     } else {
         alertaNAN(local)
-        alert('Os campos não são iguais '+ local )
+        alert('Os campos não são iguais ' + local)
     }
 }
 
