@@ -50,6 +50,7 @@ function senhasIguais(local1, local2, local) {
         alertaOK(local)
     } else {
         alertaNAN(local)
+        alert('Os campos não são iguais '+ local )
     }
 }
 
