@@ -1,5 +1,3 @@
-//<a href="../../index.html" id="enviar">
-
 const form = document.querySelector('#form');
 
 form.addEventListener('submit', function (e) {
@@ -21,8 +19,13 @@ form.addEventListener('submit', function (e) {
     validacao(email, 'email')
     validacao(senha, 'senha')
 
-    const validacaoEmail = Confirmação_de_Email == false ? alertaNAN('Confirmação_de_Email') : senhasIguais(email, Confirmação_de_Email, 'Confirmação_de_Email');
-    const validacaoSenha = Confirmação_de_Senha == false ? alertaNAN('Confirmação_de_Senha') : senhasIguais(senha, Confirmação_de_Senha, 'Confirmação_de_Senha');
+    const validacaoEmail = Confirmação_de_Email == false ? alertaNAN('Confirmação_de_Email') : valoresIguais(email, Confirmação_de_Email, 'Confirmação_de_Email');
+    const validacaoSenha = Confirmação_de_Senha == false ? alertaNAN('Confirmação_de_Senha') : valoresIguais(senha, Confirmação_de_Senha, 'Confirmação_de_Senha');
+
+    if (validacaoEmail && validacaoSenha == true) {
+        alert('obrigado por se cadastrar')
+        window.location.href = '../../index.html';
+    }
 
 });
 
@@ -34,13 +37,14 @@ function validacao(input, localizacao) {
     }
 }
 
-function senhasIguais(local1, local2, local) {
-    if (local1 == local2) {
+function valoresIguais(local1, local2, local) {
+    let saoIguais = local1 == local2 ? true : false;
+    if (saoIguais) {
         alertaOK(local)
     } else {
         alertaNAN(local)
-        alert('Os campos não são iguais ' + local)
     }
+    return saoIguais
 }
 
 function alertaNAN(local) {
@@ -48,10 +52,13 @@ function alertaNAN(local) {
     document.getElementById(local).style.border = "solid";
     document.getElementById(local).style.borderColor = "Red";
     document.getElementById(local).style.borderWidth = "1px";
+    return false
+
 }
 
 function alertaOK(local) {
     document.getElementById(local).style.border = "solid";
     document.getElementById(local).style.borderColor = "rgba(0, 255, 110)";
     document.getElementById(local).style.borderWidth = "1px";
+    return true
 }
